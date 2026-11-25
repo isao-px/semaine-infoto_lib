@@ -26,7 +26,7 @@ classifiers = [
 ]
 
 [project.urls]
-Repository = "https://github.com/stefanlauper326-cyber/Semain-info"
+Repository = "https://github.com/isao-px/semaine-infoto_lib"
 
 # Lu comme du texte : le module n'est pas importé (il échouerait sans `machine`).
 [tool.hatch.version]
