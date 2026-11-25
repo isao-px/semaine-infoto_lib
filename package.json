@@ -1,0 +1,8 @@
+{
+  "urls": [
+    ["semaine_infoto/__init__.py", "src/semaine_infoto/__init__.py"],
+    ["semaine_infoto/semaine_infoto.py", "src/semaine_infoto/semaine_infoto.py"]
+  ],
+  "deps": [],
+  "version": "0.1.0"
+}
