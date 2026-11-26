@@ -1,6 +1,6 @@
 # Hello world
 from machine import Pin, PWM, ADC
-from classes import Servo, Led, Potentiometre, Bouton, Photoresistance, calculate_shutter_speed
+from semaine_infoto import *
 from time import ticks_ms, sleep_ms
 
 # Définition des constantes matérielles
@@ -36,6 +36,12 @@ while True:
     # MàJ des mesures
     potentiometre.update()
     photoresistance.update()
+
+    n = calculate_ouverture(
+        tension_potentiometre = potentiometre.tensionRead,
+        f = F
+    )
+
     shutter_speed = calculate_shutter_speed(
         lux = photoresistance.luxRead,
         n = n,
