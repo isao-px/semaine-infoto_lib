@@ -85,7 +85,7 @@ def calculate_shutter_speed(lux=1000, n=2.5, c=250, iso=1):
     return shutter_speed
 
 def calculate_ouverture(tension_potentiometre = 2.5, f=100, pente=5.45, ordonnee=8.92):
-    if tension_potentiometre >= 5: # Si le diamètre de l'ouverture est au dessus de 35.5 mm
+    if tension_potentiometre >= 5: # Si le diamètre de l'ouverture est supérieur à 35.5 mm
         n= f / 40
     else: # si la tension du potentiomètre est < 5 volts
         n= f / ((pente * tension_potentiometre) + ordonnee)
