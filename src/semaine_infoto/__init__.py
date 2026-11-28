@@ -5,6 +5,7 @@ from .semaine_infoto import (
     Photoresistance,
     Bouton,
     calculate_shutter_speed,
+    calculate_ouverture,
 )
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"
